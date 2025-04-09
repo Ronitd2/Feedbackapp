@@ -31,6 +31,10 @@ export default function Feedback() {
             body: JSON.stringify(formData),
         });
         const result_dest = await respond.json();
+        if(result_dest.success=='OK')
+        {
+            alert("Feedback has submitted");
+        }
         console.log(result_dest);
 
     };
