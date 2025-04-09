@@ -15,7 +15,7 @@ const logout=(e)=>{
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const respond = await fetch(`http://localhost:8080/feedback/query/`, {
+        const respond = await fetch(`https://feedbackserver-lfek.onrender.com/feedback/query/`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

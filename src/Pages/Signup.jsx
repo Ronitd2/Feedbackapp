@@ -18,7 +18,7 @@ export default function Signup() {
             password: password,
             name: name
         }
-        const response = await fetch("http://localhost:8080/signup/", {
+        const response = await fetch("https://feedbackserver-lfek.onrender.com/signup/", {
             method: 'POST',
             body: JSON.stringify(user),
             headers: {

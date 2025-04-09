@@ -23,7 +23,7 @@ export default function Feedback() {
         }
         console.log('Feedback submitted:', formData);
 
-        const respond = await fetch(`http://localhost:8080/feedback/submit/`, {
+        const respond = await fetch(`https://feedbackserver-lfek.onrender.com/feedback/submit/`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
